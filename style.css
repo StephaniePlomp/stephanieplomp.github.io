@@ -1,11 +1,11 @@
 :root {
     --fontfp: 'Montserrat Alternates', sans-serif;
-    --clr-background: radial-gradient(circle at 49% 46%,rgba(149,176,241,0.51), rgba(174, 192, 235, 0) 50%), radial-gradient(circle at 10% 10%,rgba(234, 212, 189, 0.62), rgba(240,173,103,0) 50%), radial-gradient(circle at 90% 10%,rgba(184,150,255,0.52), rgba(184,150,255,0) 50%), radial-gradient(circle at 90% 90%,rgba(81, 136, 191, 0.69), rgba(47,168,178,0) 50%), radial-gradient(circle at 10% 90%,rgba(142, 106, 196, 0.5), rgba(168,112,253,0) 50%);
+    --clr-background: radial-gradient(circle at 49% 46%,rgba(149,176,241,0.51), rgba(174, 192, 235, 0) 50%), radial-gradient(circle at 10% 10%,rgba(241, 189, 134, 0.758), rgba(240,173,103,0) 50%), radial-gradient(circle at 90% 10%,rgba(183, 150, 255, 0.631), rgba(184,150,255,0) 50%), radial-gradient(circle at 90% 90%,rgba(81, 136, 191, 0.69), rgba(47,168,178,0) 50%), radial-gradient(circle at 10% 90%,rgba(142, 106, 196, 0.5), rgba(168,112,253,0) 50%);
     --clr-line: rgba(255, 255, 255, 0.65);
     --clr-text: rgba(0, 0, 0, 0.77); 
     --font-patrick: 'Patrick Hand SC', cursive;
-    --clr-orange: rgba(235, 127, 19, 0.754);  
-    --clr-resume-accents: #7982d4e5;
+    --clr-orange: rgb(255, 255, 255);  
+    --clr-resume-accents: rgb(104, 138, 193);
     --font-resume: arial; 
   }
 
@@ -119,6 +119,12 @@ Nav
   font-weight: 500;
   letter-spacing: 3px;
   font-size: 18px;
+  transition: all .2s ease;
+ }
+
+ .nav-links a:hover {
+  border-bottom: 3px solid var(--clr-orange);
+  padding-bottom: 4px;
  }
 
 /*--------------
@@ -708,7 +714,7 @@ p {
 
 .required {
   display: inline-block;
-  color: var(--clr-orange);
+  color: rgb(211, 146, 26);
   font-size: 20px;
   height: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
