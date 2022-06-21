@@ -391,7 +391,7 @@ p.resume-h1 {
 
 p.resume-h2 {
   font-size: 26px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 p.resume {
@@ -1087,7 +1087,7 @@ MEDIA QUERIES MAX.768PX
   p.resume-h2 {
     font-size: 1.5em;
     color: black;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   p.resume {
