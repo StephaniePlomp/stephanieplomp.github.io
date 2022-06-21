@@ -1149,21 +1149,11 @@ form {
   }
   
   .btn-project {
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 400;
     box-shadow: 0 4px 8px 0 rgba(31, 38, 135, 0.2);
-    border-radius: 4px;
     padding: 6px;
     font-size: 13px;
-    outline: none;
-    letter-spacing: 1.8px;
-    text-decoration: none;
-    border: 2px solid black;
-    background: rgb(255, 255, 255);
-    color: black;
     filter: opacity(1);
-  -webkit-filter: opacity(1);  
+    -webkit-filter: opacity(1);  
   }
 }
 
