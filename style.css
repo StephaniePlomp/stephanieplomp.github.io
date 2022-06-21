@@ -5,7 +5,7 @@
     --clr-text: rgba(0, 0, 0, 0.77); 
     --font-patrick: 'Patrick Hand SC', cursive;
     --clr-orange: rgba(235, 127, 19, 0.754);  
-    --clr-resume-accents: #5e76b8;
+    --clr-resume-accents: #7982d4e5;
     --font-resume: arial; 
   }
 
@@ -339,7 +339,7 @@ About me
 /*------------------- RESUME Close Button */
 
 .close {
-  color: var(--clr-text);
+  color: var(--clr-resume-accents);
   float: right;
   top: -20px;
   position: relative;
@@ -348,7 +348,7 @@ About me
   
 .close:hover,
 .close:focus {
-  color: var(--clr-resume-accents);
+  color: var(--clr-text);
   text-decoration: none;
   cursor: pointer;
   } 
@@ -370,6 +370,7 @@ About me
   margin: auto;
   text-align: left;
   color: var(--clr-text);
+  font-size: 1em;
 }
 
 p.resume-h1 {
@@ -421,7 +422,7 @@ hr.resume {
 }
 
 .table-languages {
-  margin: 0 0 0 56px;
+  margin: 0 0 0 57px;
 }
 
 /*------------------RESUME buttons inside modal */
@@ -1013,7 +1014,6 @@ MEDIA QUERIES MAX.768PX
     outline: none;
   }
 
-
   .nav-links li {
     opacity: 0;
   }
@@ -1059,14 +1059,14 @@ MEDIA QUERIES MAX.768PX
 
   /* CONTACT */
 
-form {
+  form {
     margin: 0rem 0rem 0rem 0rem;
-}
+  }
 
   /* MOBILE VERSION RESUME 768PX */
   .modal-content {
     margin: -50px auto 20px auto;
-    padding: 20px;
+    padding: 10px;
     width: 95%;
   }
   
@@ -1075,10 +1075,11 @@ form {
     margin: auto;
     text-align: left;
     color: black;
+    font-size: .9em;
   }
 
   p.resume-h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: black;
     font-weight: 200;
   }
@@ -1113,7 +1114,7 @@ form {
   }
 
   .table-personality {
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 0px;
   }
 
   .table-languages {
@@ -1153,7 +1154,7 @@ form {
   }
 
   .coming-soon {
-    opacity: 0.7;
+    opacity: 0.5;
     }
     
 }
