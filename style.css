@@ -593,8 +593,8 @@ filter: opacity(1);
 }
 
 .coming-soon {
-opacity: 1;
-background: image("/images/comingsoon.jpg");
+opacity: 0.7;
+background-image: ("/images/comingsoon.jpg");
 }
 
 .img-coming-soon {
@@ -700,10 +700,6 @@ Contact
 
 .info {
   position: relative;
-}
-
-.info > h2 {
-  padding: 4rem;
 }
 
 p {
