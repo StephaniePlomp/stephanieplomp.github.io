@@ -1,12 +1,13 @@
 :root {
-    --fontfp: 'Montserrat Alternates', sans-serif;
     --clr-background: radial-gradient(circle at 49% 46%,rgba(149,176,241,0.51), rgba(174, 192, 235, 0) 50%), radial-gradient(circle at 10% 10%,rgba(241, 189, 134, 0.758), rgba(240,173,103,0) 50%), radial-gradient(circle at 90% 10%,rgba(183, 150, 255, 0.631), rgba(184,150,255,0) 50%), radial-gradient(circle at 90% 90%,rgba(81, 136, 191, 0.69), rgba(47,168,178,0) 50%), radial-gradient(circle at 10% 90%,rgba(142, 106, 196, 0.5), rgba(168,112,253,0) 50%);
     --clr-line: rgba(255, 255, 255, 0.65);
     --clr-text: rgba(0, 0, 0, 0.77); 
-    --font-patrick: 'Patrick Hand SC', cursive;
-    --clr-orange: rgb(255, 255, 255);  
+    --clr-orange: rgba(220, 129, 32, 0.908);  
     --clr-resume-accents: rgb(104, 138, 193);
+    --clr-white: rgb(255, 255, 255);
+    --font-patrick: 'Patrick Hand SC', cursive;
     --font-resume: arial; 
+    --fontfp: 'Montserrat Alternates', sans-serif;
   }
 
 
@@ -123,7 +124,7 @@ Nav
  }
 
  .nav-links a:hover {
-  border-bottom: 3px solid var(--clr-orange);
+  border-bottom: 3px solid var(--clr-white);
   padding-bottom: 4px;
  }
 
@@ -149,7 +150,7 @@ Home section
 }
 
 .intro-text {
-  color: var(--clr-orange);
+  color: var(--clr-white);
   font-family: var(--font-patrick);
   font-size: 25px;
   text-transform: uppercase;
@@ -159,8 +160,8 @@ h3 span.intro-bounce {
     display: flex;
     font-size: 40px;
     padding: 0px 0 38px 0;
-    color: var(--clr-orange);
-    font-family: var(--font-patrick);
+    color: var(--clr-white)
+;    font-family: var(--font-patrick);
 }
 
 .container-bounce {
@@ -650,6 +651,7 @@ div.hoverbubble {
   width: 40px;
   height: 30px;
 }
+
 div.hoverbubble span {display: none;}
 div.hoverbubble:hover span {
 	display: block;
@@ -659,8 +661,8 @@ div.hoverbubble:hover span {
 	text-align: center;
 	white-space: nowrap;
 	top: -45px;
-	background: rgb(0, 0, 0);
-	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.767);
+	border-radius: 8px;
 	color: #fff;
   font-size: 13px;
 }
@@ -668,7 +670,7 @@ div.hoverbubble:hover span:after {
 	position: absolute;
 	display: block;
 	content: "";
-	border-color: rgb(0, 0, 0) transparent transparent transparent;
+	border-color: rgba(0, 0, 0, 0.767) transparent transparent transparent;
 	border-style: solid;
 	border-width: 10px;
 	position: absolute;
@@ -681,6 +683,111 @@ div.hoverbubble:hover span:after {
   width: 100%;
   height: 100px;
 }
+
+/*--------------
+SKILLS 
+---------------*/ 
+
+.skills{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills .percent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+}
+.container-skills .percent svg{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.skills .percent svg circle{
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 6;
+  stroke:var(--clr-line);
+  transform: translate(5px, 5px);
+  stroke-dasharray: 377;   /* radius cirle is 60 so (2*PI*60) = length dasharray */
+  stroke-linecap: round;
+}
+.skills .percent svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: var(--clr-line);
+}
+
+.skills .percent svg circle:nth-child(2){
+  stroke: var(--clr-orange);
+}
+
+.skill {
+  position: absolute;
+  top: -5%;
+  left: 15%;
+  width: 65px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+}
+
+/* SKILL percentages */ 
+
+.html-circle {
+  stroke-dashoffset:calc(377 - (377 * 90) / 100) !important;
+}
+.css-circle {
+  stroke-dashoffset:calc(377 - (377 * 80) / 100) !important;
+}
+.js-circle {
+  stroke-dashoffset:calc(377 - (377 * 60) / 100) !important;
+}
+.react-circle {
+  stroke-dashoffset:calc(377 - (377 * 5) / 100) !important;
+}
+
+
+.logo span {
+  display: none;
+}
+
+.logo:hover span {
+	display: block;
+	position: absolute;
+  content: "";
+	padding: 8px;
+	text-align: center;
+	white-space: nowrap;
+	top: -10px;
+  left: 40px;
+	background: rgba(0, 0, 0, 0.767);
+	border-radius: 8px;
+	color: #fff;
+  font-size: 13px;
+}
+.logo:hover span:after {
+	position: absolute;
+	display: block;
+	content: "";
+	border-color: rgba(0, 0, 0, 0.767) transparent transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	position: absolute;
+	bottom: -20px;
+	left: 15px;
+}
+
+
+
+
 
 /*--------------
 Contact
