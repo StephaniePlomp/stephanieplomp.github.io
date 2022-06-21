@@ -594,7 +594,7 @@ filter: opacity(1);
 
 .coming-soon {
 opacity: 1;
-background: #ffffff;
+background: image("/images/comingsoon.jpg");
 }
 
 .img-coming-soon {
@@ -838,7 +838,7 @@ textarea.input {
   opacity: 0;
   transition: .3s;
   height: 5px;
-  background-color: rgb(127, 146, 201);
+  background-color: rgb(104, 138, 193);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1139,5 +1139,32 @@ form {
   }
 }
 
+@media (hover: none) {
+
+  .overlay{
+    opacity: 1;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background: #7996cf48;
+  }
+  
+  .btn-project {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: 0 4px 8px 0 rgba(31, 38, 135, 0.2);
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+    outline: none;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    border: 2px solid black;
+    background: rgb(255, 255, 255);
+    color: black;
+    filter: opacity(1);
+  -webkit-filter: opacity(1);  
+  }
+}
 
 
