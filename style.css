@@ -2,7 +2,7 @@
     --clr-background: radial-gradient(circle at 49% 46%,rgba(149,176,241,0.51), rgba(174, 192, 235, 0) 50%), radial-gradient(circle at 10% 10%,rgba(241, 189, 134, 0.758), rgba(240,173,103,0) 50%), radial-gradient(circle at 90% 10%,rgba(183, 150, 255, 0.631), rgba(184,150,255,0) 50%), radial-gradient(circle at 90% 90%,rgba(81, 136, 191, 0.69), rgba(47,168,178,0) 50%), radial-gradient(circle at 10% 90%,rgba(142, 106, 196, 0.5), rgba(168,112,253,0) 50%);
     --clr-line: rgba(255, 255, 255, 0.65);
     --clr-text: rgba(0, 0, 0, 0.77); 
-    --clr-orange: rgba(220, 129, 32, 0.908);  
+    --clr-orange: rgba(220, 129, 32, 0.663);  
     --clr-resume-accents: rgb(104, 138, 193);
     --clr-white: rgb(255, 255, 255);
     --font-patrick: 'Patrick Hand SC', cursive;
