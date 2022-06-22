@@ -699,15 +699,17 @@ SKILLS
 
 .skills .percent{
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 15px;
+  width: 130px;
+  height: 130px;
+  margin: 20px;
 }
-.container-skills .percent svg{
-  position: relative;
-  width: 150px;
-  height: 150px;
+
+
+.skills .percent svg {
+  width: 130px;
+  height: 130px;
 }
+
 .skills .percent svg circle{
   width: 150px;
   height: 150px;
@@ -715,9 +717,11 @@ SKILLS
   stroke-width: 6;
   stroke:var(--clr-line);
   transform: translate(5px, 5px);
-  stroke-dasharray: 377;   /* radius cirle is 60 so (2*PI*60) = length dasharray */
+  stroke-dasharray: 377;   /* radius circle is 60 so (2*PI*60) = length dasharray */
+  stroke-dashoffset: 377; 
   stroke-linecap: round;
 }
+
 .skills .percent svg circle:nth-child(1){
   stroke-dashoffset: 0;
   stroke: var(--clr-line);
@@ -729,31 +733,14 @@ SKILLS
 
 .skill {
   position: absolute;
-  top: -5%;
-  left: 15%;
+  top: 1%;
+  left: 18%;
   width: 65px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #444;
 }
-
-/* SKILL percentages */ 
-
-.html-circle {
-  stroke-dashoffset:calc(377 - (377 * 90) / 100) !important;
-}
-.css-circle {
-  stroke-dashoffset:calc(377 - (377 * 80) / 100) !important;
-}
-.js-circle {
-  stroke-dashoffset:calc(377 - (377 * 60) / 100) !important;
-}
-.react-circle {
-  stroke-dashoffset:calc(377 - (377 * 5) / 100) !important;
-}
-
 
 .logo span {
   display: none;
@@ -763,10 +750,10 @@ SKILLS
 	display: block;
 	position: absolute;
   content: "";
-	padding: 8px;
+	padding: 7px;
 	text-align: center;
 	white-space: nowrap;
-	top: -10px;
+	top: -15px;
   left: 40px;
 	background: rgba(0, 0, 0, 0.767);
 	border-radius: 8px;
@@ -782,12 +769,22 @@ SKILLS
 	border-width: 10px;
 	position: absolute;
 	bottom: -20px;
-	left: 15px;
+	left: 13px;
 }
+/* SKILL percentages */ 
 
-
-
-
+.html-circle {
+  stroke-dashoffset:calc(377 - (377 * 90) / 100) !important;
+}
+.css-circle {
+  stroke-dashoffset:calc(377 - (377 * 80) / 100) !important;
+}
+.js-circle {
+  stroke-dashoffset:calc(377 - (377 * 60) / 100) !important;
+}
+.react-circle {
+  stroke-dashoffset:calc(377 - (377 * 5) / 100) !important;
+}
 
 /*--------------
 Contact
@@ -1253,8 +1250,8 @@ MEDIA QUERIES MAX.768PX
 
   .overlay{
     opacity: 1;
-    backdrop-filter: blur(.5px);
-    -webkit-backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     background: #7996cf19;
   }
   
