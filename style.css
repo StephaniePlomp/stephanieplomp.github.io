@@ -96,7 +96,7 @@ Nav
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   position: fixed;
-  z-index: 10;
+  z-index: 15;
 }
 
 .container-navbar {
@@ -105,7 +105,7 @@ Nav
   height: 10vh;
   position: fixed;
   top: 0px;
-  z-index: 11;       
+  z-index: 16;       
   justify-content: space-around;
   align-items: center;
   border-bottom: 4px solid var(--clr-line);
@@ -1079,7 +1079,6 @@ footer {
 .div-social ul {
   display: flex;
   flex-wrap: nowrap;
-  
   padding-top: 20px;
   padding-bottom: 20px;
   opacity: 0.5;
@@ -1119,11 +1118,15 @@ footer {
   color: #0a66c2;
 }
 
+.follow-me {
+  font-size: 18px;
+}
+
 .copyright {
   position: relative;
   padding-top: 80px;
   padding-bottom: 5px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /*--------------
