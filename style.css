@@ -76,13 +76,13 @@ Skewed line
 .chevron:before {
   left: 0;
   width: 50%;
-  transform: skew(0deg, 30deg);
+  transform: skew(0deg, 20deg);
 }
 
 .chevron:after {
   right: 0;
   width: 50%;
-  transform: skew(0deg, -30deg);
+  transform: skew(0deg, -20deg);
 }
 
 /*--------------
@@ -1150,6 +1150,17 @@ MEDIA QUERIES MAX. 1283PX
 -----------------*/ 
 
 @media screen and (max-width:1283px) {
+
+/* Skewed line -*/ 
+  .chevron:before {
+    transform: skew(0deg, 30deg);
+  }
+
+  .chevron:after {
+    transform: skew(0deg, -30deg);
+  }
+
+/* Nav -*/ 
   .nav-links {
     width: 50%;
   }
@@ -1183,6 +1194,15 @@ MEDIA QUERIES MAX.768PX
 -----------------*/ 
 @media screen and (max-width:768px) {
 
+  /* Skewed line -*/ 
+  .chevron:before {
+    transform: skew(0deg, 30deg);
+  }
+
+  .chevron:after {
+    transform: skew(0deg, -30deg);
+  }
+  
   /* BURGER MENU LINKS */
 
   .nav-links {

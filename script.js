@@ -1,14 +1,3 @@
-const skewedOne = document.querySelector(".skewedOne"); 
-const skewedTwo = document.querySelector(".skewedTwo"); 
-const skewedOne1 = document.querySelector(".skewedOne1"); 
-const skewedTwo2 = document.querySelector(".skewedTwo2"); 
-
-window.addEventListener('scroll', function(){
-    const value1 = -15 + window.scrollY/45; 
-    const value2 = 15 + window.scrollY/-45; 
-    skewedOne.style.transform = "skewY(" + value1 + "deg)";
-    skewedTwo.style.transform = "skewY(" + value2 + "deg)";
-})
 
 //navbar
 
@@ -81,21 +70,6 @@ function process () {
   // STOP DEFAULT FORM SUBMIT/PAGE RELOAD
   return false;
 }
-
-
-// button sent
-/*
-
-btnSend.addEventListener("click", (event) => {
-    event.preventDefault(); 
-    if(btnSend.innerText === "Send") {
-      
-    } else {
-        btnSend.innerText="Send"; 
-    }
-});
-*/
-
 
 // Contact form
 
