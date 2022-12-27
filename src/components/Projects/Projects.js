@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import weatherApp from '../Images/weatherApp.png'
-import portfolioWebsite from '../Images/portfolioWebsite.png'
+import portfolioWeb from '../Images/portfolioWebsite.png'
 import VideoModal from "./VideoModal";
 import useModal from '../Hooks//useModal';
 
@@ -56,7 +56,7 @@ function Projects() {
           <div className='card'>
             <button className='project-number-btn'>2</button>
             <div className='card-image'>
-              <img src={portfolioWebsite} className='project-img two'></img>
+              <img src={portfolioWeb} className='project-img two'></img>
             </div>
             <div className='card-content'>
               <div className='card-top'>
