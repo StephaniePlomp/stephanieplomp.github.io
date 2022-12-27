@@ -1,0 +1,339 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+
+.about-left {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.797);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.about-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em; 
+}
+
+.menu-item {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-item a {
+    text-decoration: none;
+    position: relative;
+    color: var(--secondaryColor);
+}
+
+.menu-item a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--secondaryColor);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.menu-item a:hover:after {
+    width: 100%;
+}
+
+.menu-item a.active:after {
+    width: 100%;
+}
+
+.about-left-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.download-resume-btn {
+    box-shadow: 0 4px 8px 0 rgba(31, 38, 135, 0.2);
+    border-radius: 4px;
+    border: 2px solid var(--secondaryColor);
+    padding: 0.3rem;
+    width: 14rem;
+    background: transparent;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+    transition: all 0.2s ease-in-out;
+    margin: 1rem auto 2rem auto;
+    cursor: pointer;
+}
+
+.download-resume-btn:hover {
+    box-shadow: 0 20px 40px rgba(61, 65, 84, 0.25);
+    top: -2px;
+    background: var(--secondaryColor);
+    color: white;
+}
+
+/* ------------INTRO---------------- */
+
+.about-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-content p {
+    color: black;
+}
+
+.about-text {
+    margin: .6em 0;
+}
+
+.intro-highlight {
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
+
+.intro-click {
+    color: var(--secondaryColor);
+    margin-left: 4px;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* ------ Right section -------- */
+
+.about-right {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* -------------Skills--------------- */
+
+.skills-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skill-card {
+    border: 3px solid var(--secondaryColor);
+    background: var(--mainColor);
+    width: 6.3rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+}
+
+.skill-icon {
+    width: 4em;
+    transition: 0.6s;
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotateY(180deg);
+}
+
+.skill-name {
+    font-family: var(--fontText);
+    color: white;
+    padding: 0.7rem 0 0 0;
+    font-weight: 600;
+}
+
+/* ------ Resume first line -------- */
+
+.resume-line {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+
+.resume-title, .resume-title-edu {
+    font-weight: 800;
+}
+
+.resume-location,
+.resume-year {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.resume-break {
+    margin: 1em;
+    border-color: var(--secondaryColor);
+    border-width: 1px;
+}
+
+.resume-list p,
+.resume-list li {
+    font-family: var(--fontText);
+}
+
+.resume-list {
+    padding: 0.5em 1.5em;
+    list-style-type: '- ';
+}
+
+/* ------ Mobile -------- */
+
+@media screen and (max-width: 940px) {
+
+    .about-content {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .about-content p {
+        font-size: 0.85em;
+    }
+
+    .resume-list {
+        padding: 0.7rem;
+    }
+
+    .skill-card:hover .skill-icon {
+        transform: none;
+    }
+}
+
+/* ------ CSSTrainsition -------- */
+
+.transition-enter {
+    opacity: 0; 
+    transform: translate(0, -100px);
+    height: auto;
+}
+
+.transition-enter-active {
+    transform: translate(0, 0px); 
+    transition: all 1000ms;
+    opacity: 1;
+    /* height: var(--heightdiv);  */
+}
+
+.transition-active {
+    opacity: 1;
+} 
+
+.transition-exit {
+    height: 0;
+    opacity: 0; 
+} 
+
+/* ------ Modal -------- */
+
+.modal-background {
+    position: fixed;
+    z-index: 200; 
+    top: 5em;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+     -webkit-backdrop-filter: blur(8px);
+    animation: fadeIn 1s 1;
+    height: 100%;
+}
+
+.modal-container {
+    width: 100%;
+    position: relative;
+    padding: 0em 2em; 
+    height: 100vh;
+    margin: auto;
+    max-width: 900px;
+    height: auto;
+    padding-bottom: 6em;
+}
+
+.modal-close-btn {
+    color: var(--secondaryColor);
+    float: right;
+    top: .9em;
+    left: .6em;
+    margin: .3em;
+    padding: .1em;
+    position: relative;
+    font-size: 3.6rem;
+    cursor: pointer;
+    z-index: 101;
+    background: white;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;
+    border: 3px solid var(--secondaryColor);
+}
+
+.modal-close-btn:hover {
+    transform: scale(1.1);
+}
+
+body.active {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+}
+
+.resume-download-btn {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(31, 38, 135, 0.2);
+    border-radius: 4px;
+    border: 3px solid var(--secondaryColor);
+    padding: 0.3rem;
+    width: 14rem;
+    z-index: 100;
+    text-align: center;
+    background: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 1.7em;
+    text-align: center;
+    color: var(--secondaryColor);
+    background-color: white;
+    transition: 300ms;
+}
+
+.resume-download-btn:hover {
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+.download-icon {
+    font-size: 1.6rem;
+    margin-right: .5em;
+    margin-top: .1em;
+}
+
+ /*keyframe for modal animation*/
+ @keyframes fadeIn {
+    0% {opacity: 0}
+    10% {opacity: 0.1}
+    20% {opacity: 0.2}
+    30% {opacity: 0.3}
+    40% {opacity: 0.4}
+    50% {opacity: 0.5}
+    60% {opacity: 0.6}
+    70% {opacity: 0.7}
+    80% {opacity: 0.8}
+    90% {opacity: 0.9}
+    100% {opacity: 1}
+}

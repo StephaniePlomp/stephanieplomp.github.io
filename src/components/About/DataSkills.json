@@ -1,0 +1,32 @@
+[
+        {
+            "id": 1,
+            "name": "HTML5",
+            "img": "/Icons/html.svg"
+        },
+        {
+            "id": 2,
+            "name": "CSS3",
+            "img": "/Icons/css.svg"
+        },
+        {
+            "id": 3,
+            "name": "JavaScript",
+            "img": "/Icons/javascript.svg"
+        },
+        {
+            "id": 4,
+            "name": "Git",
+            "img": "/Icons/git.svg"
+        },
+        {
+            "id": 5,
+            "name": "React.js",
+            "img": "/Icons/react.svg"
+        },
+        {
+            "id": 6,
+            "name": "Redux",
+            "img": "/Icons/redux.svg"
+        }
+]
