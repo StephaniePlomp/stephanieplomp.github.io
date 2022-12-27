@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import weatherApp from '../Images/weatherApp.png'
-import portfolioWeb from '../Images/portfolioWebsite.png'
+import portfolioWeb from '../Images/portfolioWeb.png'
 import VideoModal from "./VideoModal";
 import useModal from '../Hooks//useModal';
 
