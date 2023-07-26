@@ -17,6 +17,7 @@ function Projects() {
             <button className='project-number-btn'>1</button>
             <div className='card-image'>
               <img
+                alt="project screenshot 1"
                 src={weatherApp}
                 className='project-img'
               >
@@ -46,8 +47,8 @@ function Projects() {
                 >
                   Watch project summary in 2-minute video</button>
                 <div className='card-buttons'>
-                  <a href="https://stephanieplomp.github.io/react-weather-app/" className='card-btn' target="_blank">Live demo</a>
-                  <a href="https://github.com/StephaniePlomp/react-weather-app/" className='card-btn' target="_blank">Source code</a>
+                  <a href="https://stephanieplomp.github.io/react-weather-app/" className='card-btn' target="_blank" rel="noreferrer">Live demo</a>
+                  <a href="https://github.com/StephaniePlomp/react-weather-app/" className='card-btn' target="_blank" rel="noreferrer">Source code</a>
                 </div>
               </div>
             </div>
@@ -56,7 +57,10 @@ function Projects() {
           <div className='card'>
             <button className='project-number-btn'>2</button>
             <div className='card-image'>
-              <img src={portfolioWeb} className='project-img two'></img>
+              <img 
+              alt="project screenshot 2"
+              src={portfolioWeb} 
+              className='project-img two'></img>
             </div>
             <div className='card-content'>
               <div className='card-top'>
@@ -75,8 +79,8 @@ function Projects() {
               >
                 Watch project summary in 2-minute video</button>
               <div className='card-buttons'>
-              <a href="" className='card-btn current' target="_blank">Current page</a>
-                  <a href="https://github.com/StephaniePlomp/stephanieplomp.github.io" className='card-btn' target="_blank">Source code</a>
+              {/* <a href="" className='card-btn current' target="_blank">Current page</a> */}
+                  <a href="https://github.com/StephaniePlomp/stephanieplomp.github.io" className='card-btn' target="_blank" rel="noreferrer">Source code</a>
               </div>
             </div>
             </div>
