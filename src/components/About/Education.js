@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 export const Education = () => {
   const ref = useRef(null);

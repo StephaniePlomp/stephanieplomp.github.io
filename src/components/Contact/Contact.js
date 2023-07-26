@@ -35,10 +35,9 @@ const Contact = () => {
               You can also find me on social media
             </p>
             <div className="socialmedia-icons">
-              <a href="https://github.com/stephanieplomp" target="_blank" rel="noreferrer" className="fa fa-github"></a>
-              <a href="https://codepen.io/stephanie-plomp/" target="_blank" rel="noreferrer" className="fa fa-codepen"></a>
-              <a href="https://www.linkedin.com/in/stephanie-plomp-631b7a166/" target="_blank" rel="noreferrer"
-                className="fa fa-linkedin-square"></a>
+              <a href="https://github.com/stephanieplomp" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
+              <a href="https://codepen.io/stephanie-plomp/" target="_blank" rel="noreferrer"><i className="fa fa-codepen"></i></a>
+              <a href="https://www.linkedin.com/in/stephanie-plomp-631b7a166/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square"></i></a>
             </div>
           </div>
         </div>

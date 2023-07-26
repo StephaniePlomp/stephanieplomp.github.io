@@ -1,4 +1,3 @@
-import React, { useLayoutEffect, useRef, useState } from 'react'
 import { Link } from "react-scroll"
 
 export const Intro = () => {
