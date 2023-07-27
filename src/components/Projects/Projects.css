@@ -26,6 +26,10 @@
   background: var(--mainColor);
 }
 
+.right {
+  flex-direction:row-reverse;
+}
+
 .project-number-btn {
   position: absolute;
   height: 1.6em;
@@ -116,7 +120,7 @@
 .card-image {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -135,6 +139,11 @@
 
 .card-image:hover img {
   object-position: bottom center;
+}
+
+.tall {
+  transition: all 12s ease-in-out;
+
 }
 
 /* ------ Coming soon -------- */
@@ -179,6 +188,7 @@
 
   .card-image {
     height: 250px;
+    width: 100%;
   }
 
 }
