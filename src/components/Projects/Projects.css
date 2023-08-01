@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   gap: 2em;
-  align-items: stretch
+  align-items: stretch;
 }
 
 .card {
@@ -27,7 +27,7 @@
 }
 
 .right {
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
 }
 
 .project-number-btn {
@@ -45,13 +45,26 @@
   left: -.6em;
 }
 
+.card-top {
+  display: flex;
+  width: 100%;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
 .card-content {
   padding: 1rem 1rem 0 1.7rem;
-  width: 50%;
   display: flex;
   flex-direction: column;
   position: relative;
-  justify-content: space-between;
+  width: 50%;
 }
 
 .card-title {
@@ -64,14 +77,8 @@
   text-align: center;
 }
 
-.card-top {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-bottom {
+.content-bottom {
   position: relative;
-  width: 100%;
 }
 
 .card-buttons {
@@ -107,7 +114,7 @@
   background-color: transparent;
   cursor: pointer;
   margin: 0 auto;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .card-btn:hover {
@@ -115,15 +122,6 @@
   top: -2px;
   background: var(--secondaryColor);
   color: white;
-}
-
-.card-image {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  overflow: hidden;
-  border-radius: 10px;
-  position: relative;
 }
 
 .project-img {
@@ -143,27 +141,7 @@
 
 .tall {
   transition: all 12s ease-in-out;
-
 }
-
-/* ------ Coming soon -------- */
-
-.coming-soon-overlay {
-  filter: blur(4px);
-  width: 100%;
-  pointer-events: none;
-}
-
-.image-coming-soon {
-  color: var(--secondaryColor);
-  font-size: 2.7rem;
-  margin: auto;
-}
-
-.card-btn.current {
-  pointer-events: none;
-}
-
 
 /* -------- Mobile ------- */
 
@@ -176,21 +154,46 @@
 
   .card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     width: 47%;
   }
 
-  .card-content {
-    width: 100%;
-    padding: 1rem 1rem 0 1rem;
+  .card-top {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .content-top {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .card-image {
-    height: 250px;
+    display: flex;
+    justify-content: center;
     width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    height: 250px;
   }
 
+  .card-content {
+    display: flex;
+    padding: 1rem 1rem 0 1rem;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+  }
+
+  .content-bottom {
+    display: inline;
+    margin-top: auto;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -200,6 +203,10 @@
 
   .card {
     width: 100%;
+  }
+
+  .card-content {
+    height: fit-content;
   }
 }
 
