@@ -9,7 +9,7 @@ import { BsDownload } from 'react-icons/bs'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  'https://github.com/StephaniePlomp/stephanieplomp.github.io/raw/92e5613a00d49e990534dde04dad4d51ccd4cc41/src/components/About/Resume.pdf';
+  'https://github.com/StephaniePlomp/stephanieplomp.github.io/raw/94419166be04cdabdc008f1068baafb0615c0734/src/components/About/Resume.pdf';
 
 function ResumeModal({ onClose }) {
   const [initialWidth, setInitialWidth] = useState(null);
