@@ -212,10 +212,10 @@
 
 /* ------ Modal Video -------- */
 
-
 .modal-wrapper {
   position: fixed;
-  top: 80%;
+  overflow: hidden;
+  top: 70%;
   left: 50%;
   z-index: 200;
   width: 100%;

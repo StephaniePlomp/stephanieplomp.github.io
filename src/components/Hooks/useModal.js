@@ -17,7 +17,7 @@ const useModal = () => {
     setIsShowing(!isShowing);
     setEmbedId(e.target.id)}
 
-  return {
+    return {
     isShowing,
     toggle,
     embedId,

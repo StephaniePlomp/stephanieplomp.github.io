@@ -4,7 +4,7 @@ header {
     width: 100%;
     color: white;
     align-items: center;
-    z-index: 999;
+    z-index: 199;
 }
 
 header.active {
